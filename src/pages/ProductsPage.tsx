@@ -18,7 +18,7 @@ const ProductsPage: React.FC = () => {
 useEffect(() => {
   const searchParams = new URLSearchParams(location.search);
   const category = searchParams.get('category');
-  setSelectedCategory(category ? category : null); // ⬅ penting untuk reset ke all products
+  setSelectedCategory(category ? category : null);
 }, [location.search]);
 
   

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 import { useFavorites } from '../context/FavoritesContext';
 import ProductGrid from '../components/product/ProductGrid';
-import Button from '../components/ui/Button';
 
 const WishlistPage: React.FC = () => {
   const { favorites } = useFavorites();
@@ -24,19 +23,19 @@ const WishlistPage: React.FC = () => {
             <p className="text-neutral-600 mb-8 max-w-md mx-auto">
               Start adding items to your wishlist by clicking the heart icon on products you love.
             </p>
-            <Button 
-              as={Link} 
+
+            {/* Gunakan Link langsung */}
+            <Link 
               to="/products" 
-              variant="primary" 
-              size="lg"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded text-lg font-semibold"
             >
               Explore Products
-            </Button>
+            </Link>
           </div>
         )}
       </div>
     </div>
   );
-}
+};
 
 export default WishlistPage;
