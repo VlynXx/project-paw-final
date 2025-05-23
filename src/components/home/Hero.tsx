@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
   return (
@@ -25,24 +24,18 @@ const Hero: React.FC = () => {
             Curated collections of premium products for those who appreciate the finest things in life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              as={Link} 
+            <Link 
               to="/products" 
-              variant="primary"
-              size="lg" 
-              className="px-8"
+              className="bg-blue-600 text-white px-8 py-3 rounded text-lg font-semibold text-center"
             >
               Shop Now
-            </Button>
-            <Button 
-              as={Link} 
+            </Link>
+            <Link 
               to="/products" 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-white hover:bg-white/10"
+              className="border border-white text-white px-8 py-3 rounded text-lg font-semibold text-center hover:bg-white/10"
             >
               Explore Collections
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
