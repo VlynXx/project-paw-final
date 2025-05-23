@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Package, Truck, CheckCircle } from 'lucide-react';
-import Button from '../components/ui/Button';
+import { Package, Truck } from 'lucide-react';
 
 const OrderTrackingPage: React.FC = () => {
   const { orderId } = useParams<{ orderId: string }>();

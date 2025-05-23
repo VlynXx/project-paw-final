@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ShoppingCart, Menu, X, Heart, User, Search, LogOut } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { useAuth } from '../../context/AuthContext';
-import Button from '../ui/Button';
 import { products } from '../../lib/data';
 
 const Navbar: React.FC = () => {
