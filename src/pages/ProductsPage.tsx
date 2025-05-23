@@ -15,11 +15,12 @@ const ProductsPage: React.FC = () => {
   const location = useLocation();
   
   // Extract category from URL query params
-  useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const category = searchParams.get('category');
-    setSelectedCategory(category);
-  }, [location.search]);
+useEffect(() => {
+  const searchParams = new URLSearchParams(location.search);
+  const category = searchParams.get('category');
+  setSelectedCategory(category ? category : null); // ⬅ penting untuk reset ke all products
+}, [location.search]);
+
   
   // Filter and sort products
   useEffect(() => {
