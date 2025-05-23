@@ -1,5 +1,4 @@
 import React from 'react';
-import { LinkProps } from 'react-router-dom';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
 type ButtonSize = 'sm' | 'md' | 'lg';
