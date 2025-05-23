@@ -4,7 +4,7 @@ Luxury Marketplace adalah aplikasi e-commerce modern yang dibuat menggunakan **R
 
 ## 🔗 Demo Langsung
 
-🌐 Coba aplikasinya di: [luxury-marketplace.vercel.app](luxescape-ecommers.netlify.app)
+🌐 Coba aplikasinya di: [luxury-marketplace.vercel.app](https://luxescape-ecommers.netlify.app/)
 
 ## 🚀 Fitur Utama
 
