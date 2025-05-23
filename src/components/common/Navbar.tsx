@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               Clothing
             </Link>
             <Link to="/products?category=Home" className={`${textColor} hover:opacity-80`}>
-              Home
+              Furniture
             </Link>
           </div>
 
