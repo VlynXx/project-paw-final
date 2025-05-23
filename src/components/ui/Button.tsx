@@ -1,16 +1,20 @@
 import React from 'react';
+import { LinkProps } from 'react-router-dom';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+type AsProp = {
   as?: React.ElementType;
+  to?: string;
+};
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, AsProp {
   variant?: ButtonVariant;
   size?: ButtonSize;
   isLoading?: boolean;
   fullWidth?: boolean;
   icon?: React.ReactNode;
-  disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({

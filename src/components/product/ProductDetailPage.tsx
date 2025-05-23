@@ -4,8 +4,9 @@ import { Heart, ShoppingBag, Check, ArrowLeft, Star } from 'lucide-react';
 import { products } from '../../lib/data';
 import { useCart } from '../../context/CartContext';
 import { useFavorites } from '../../context/FavoritesContext';
-import Button from '../components/ui/Button';
-import ProductGrid from '../components/product/ProductGrid';
+import Button from '../ui/Button';
+import ProductGrid from './ProductGrid';
+
 
 const ProductDetailPage: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
