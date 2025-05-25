@@ -1,4 +1,4 @@
-# 🛍️ Luxury Marketplace (React + TypeScript + Supabase)
+# 🛍️ Luxury Marketplace
 
 Luxury Marketplace adalah aplikasi e-commerce modern yang dibuat menggunakan **React**, **TypeScript**, dan **Tailwind CSS**, dengan **Supabase** sebagai backend untuk autentikasi dan database.
 
